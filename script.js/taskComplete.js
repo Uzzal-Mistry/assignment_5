@@ -176,7 +176,7 @@ function disable(x) {
 
 document.getElementById('clear_btn').addEventListener('click', function () {
     const element = document.getElementById('historyContainer');
-    element.remove();
+    element.innerHTML=' ';
 })
 
 
