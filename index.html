@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+
+        }
+    </style>
+
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body class="bg-[#F4F7FF]">
+    <section class="poppins p-28 ">
+
+        <!-- navbar -->
+        <header class="flex justify-between bg-[#FFFFFF] rounded-lg px-4 py-2">
+
+            <!-- header left  -->
+            <div class="flex justify-center items-center ">
+                <img class="w-10 mr-1" src="assets/logo.png" alt="">
+                <h1 class="text-2xl font-light text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <!-- header right -->
+
+            <div class="flex justify-center items-center gap-5">
+                <div class="bg-[#F4F7FF] flex justify-center items-center gap-3 py-2 px-3 rounded-[32px]">
+                    <img class="w-5" src="assets/checkbox.png" alt="">
+                    <h1 id="check_number" class="text-xl font-bold">23</h1>
+                </div>
+                <img id="bg-color-change" class="cursor-pointer w-11 bg-[#F4F7FF] rounded-full p-2 " src="assets/theme-btn.png" alt="">
+            </div>
+        </header>
+
+
+
+
+
+        <main class="mt-5 flex gap-5">
+
+            <!-- dashboard -->
+            <section class="bg-white w-9/12 rounded-lg ">
+
+                <!-- discover section -->
+                <div class=" flex border-b-2 border-dashed border-[#3751fd13] p-5 gap-4">
+
+                    <!-- task assignment -->
+                    <div class="w-3/12 bg-[#F4F7FF] flex justify-center items-center py-3 px-5 rounded-lg      ">
+                        <div class="rounded-full bg-white p-3 mr-3">
+                            <img src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[#00303C] font-medium text-sm">Task Assigned</p>
+                            <h1 class="font-bold text-2xl">0<span id="taskNumber">6</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- discover something -->
+                    <div
+                        class="w-6/12 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center py-3 px-5 rounded-lg  ">
+                        <div class=" mr-3">
+                            <img src="assets/board.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-white font-medium text-xl">Discover Something <br> New Today!</p>
+
+                        </div>
+                    </div>
+
+                    <!-- time and date -->
+                    <div class="w-3/12 bg-[#F4F7FF] flex justify-center items-center py-3 px-5 rounded-lg       ">
+                        <div class="rounded-full bg-white p-3 mr-3">
+                            <img src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p id="realDay" class="text-[#00303C] font-medium text-sm">Wed,</p>
+                            <h1 id="realTimeDate" class="font-bold text-base">Jul 28 2025</h1>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- course container -->
+                <div class="pb-8 p-5  grid grid-cols-3 gap-5">
+
+                    
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">ShopeEase</small>
+                                <h2 id="title" class="font-semibold  text-[#00303C] text-lg py-3">Fix Mobile Button Issue</h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Debug
+                                    using Chrome DevTools, check for</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn1" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">CloudSync</small>
+                                <h2 id="title2" class="font-semibold  text-[#00303C] text-lg py-3">Add Dark Mode</h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Store the
+                                    user's preference in
+                                    localStorage.
+                                    effect.</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn2" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">SwiftPay</small>
+                                <h2 id="title3" class="font-semibold  text-[#00303C] text-lg py-3">Optimize  Home page </h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Store the
+                                    user's preference in
+                                    localStorage.
+                                    effect.</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn3" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">Meta</small>
+                                <h2 id="title4" class="font-semibold  text-[#00303C] text-lg py-3">Add new emoji 🤲</h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Store the
+                                    user's preference in
+                                    localStorage.
+                                    effect.</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn4" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">Google LLC</small>
+                                <h2 id="title5" class="font-semibold  text-[#00303C] text-lg py-3">Integrate OpenAI API </h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Store the
+                                    user's preference in
+                                    localStorage.
+                                    effect.</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn5" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  -->
+                    <div class="card bg-[#F4F7FF]  shadow-sm ">
+
+                        <div class="card-body  p-5">
+                            <!-- course description -->
+                            <div class="border-b-2 border-dashed border-[#3751fd13] pb-2">
+                                <small
+                                    class="bg-white px-4 py-2 rounded-lg font-normal text-sm text-[#00303C]">Glassdoar</small>
+                                <h2 id="title6" class="font-semibold  text-[#00303C] text-lg py-3">Improve Job searching </h2>
+                                <p class="bg-white px-3 py-2 rounded-lg text-[#00000097] font-normal text-sm">Store the
+                                    user's preference in
+                                    localStorage.
+                                    effect.</p>
+
+                            </div>
+
+                            <!-- complete button -->
+                            <div class="flex justify-between text-[#00303C] items-center pt-1">
+
+                                <div>
+                                    <p class="font-normal text-xm">Deadline</p>
+                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                </div>
+                                <div class="">
+                                    <button id="complete_btn6" onclick="disable(this)"
+                                        class="btn bg-[#3752FD] text-white rounded-lg font-normal ">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </section>
+
+
+            <!-- activity log -->
+            <section class="bg-white w-3/12 rounded-lg">
+                <div class="flex flex-col justify-center items-center mt-6 border-b-2 border-dashed border-[#3751fd13]">
+                    <div class="flex text-[#00303C] justify-center items-center gap-2">
+                        <img class="w-5 h-5" src="assets/activity.png" alt="">
+                        <p class="text-lg font-medium ">Active Log</p>
+                    </div>
+                    <div id="clear_btn" class="my-3 ">
+                        <button class="btn bg-[#3752FD] text-white  font-normal text-sm rounded-lg ">Clear
+                            History</button>
+                    </div>
+                </div>
+
+
+
+
+                <div id="historyContainer" class=" rounded-lg p-2">
+                </div>
+
+                <p id="output"></p>
+
+            </section>
+
+        </main>
+    </section>
+
+    <script src="script.js/taskComplete.js"></script>
+    <script src="utility/utility.js"></script>
+</body>
