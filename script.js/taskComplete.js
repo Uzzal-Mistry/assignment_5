@@ -34,6 +34,7 @@ function dateTime() {
         hours = hours - 12;
     }
 
+
     return `${hours}:${minutes}:${seconds} ${amPM}`;
 
 }
@@ -73,7 +74,7 @@ document.getElementById('complete_btn1').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title} at ${currentTime} `
+    div.innerText = `You have Completed the task ${Title} at ${currentTime} `
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
  
@@ -92,7 +93,7 @@ document.getElementById('complete_btn2').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title2} at ${currentTime} `
+    div.innerText = `You have Completed the task ${Title2} at ${currentTime} `
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
   
@@ -110,7 +111,7 @@ document.getElementById('complete_btn3').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title3} at ${currentTime} `
+    div.innerText = `You have Completed the task ${Title3} at ${currentTime} `
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
 
@@ -127,7 +128,7 @@ document.getElementById('complete_btn4').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title4} at ${currentTime} `
+    div.innerText = `You have Completed the task ${Title4} at ${currentTime} `
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
 
@@ -144,7 +145,7 @@ document.getElementById('complete_btn5').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title5} at ${currentTime} `
+    div.innerText = `You have Completed the task ${Title5} at ${currentTime} `
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
 
@@ -161,7 +162,7 @@ document.getElementById('complete_btn6').addEventListener('click', function () {
 
     let currentTime = dateTime();
     const div = document.createElement("div");
-    div.innerText = `You have Complete The ${Title6} at ${currentTime} `;
+    div.innerText = `You have Completed the task ${Title6} at ${currentTime} `;
     div.classList.add("p-2", "bg-[#F4F7FF]", "rounded-md", "mt-2", "mb-2");
     history.appendChild(div);
 
@@ -169,30 +170,16 @@ document.getElementById('complete_btn6').addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function disable(x) {
     x.disabled = true;
 }
-
-
-
 
 document.getElementById('clear_btn').addEventListener('click', function () {
     const element = document.getElementById('historyContainer');
     element.remove();
 })
+
+
+document.getElementById('discover').addEventListener('click', function() {
+    window.location.href = 'question.html'; 
+});

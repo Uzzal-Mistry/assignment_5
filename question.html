@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+
+        }
+    </style>
+    <title>Blog</title>
 </head>
-<body>
-    
+
+<body class="bg-[#F4F7FF]">
+    <section class="poppins px-28 pt-5 pb-10">
+
+        <!-- navbar -->
+        <header class="flex justify-between bg-[#FFFFFF] rounded-lg px-4 py-2 shadow">
+
+            <!-- header left  -->
+            <div class="flex justify-center items-center ">
+                <img class="w-10 mr-1" src="assets/logo.png" alt="">
+                <h1 class="text-2xl font-light text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <!-- header right -->
+
+
+            <div class="flex justify-center items-center gap-5">
+                <button class="btn bg-[#3752FD] text-white rounded-lg " id="myButton">Back to Desk</button>
+            </div>
+
+        </header>
+
+        <main>
+            <h1 class="text-center font-bold text-xl my-3">Blogs</h1>
+            <section class="space-y-5">
+
+                <div class="bg-white  rounded-lg shadow-inherit">
+                    <h2 class="font-semibold border-b-2 border-dashed border-[#3751fd13] px-4 pb-2 pt-3">Question-1:
+                        What are
+                        the different ways to select an element in the DOM?</h2>
+                    <p class="px-4 py-3 text-[#000000aa] ">I can use getElementById, getElementsByClassName,
+                        getElementsByTagName, querySelector, and querySelectorAll to select an element in the DOM</p>
+                </div>
+
+                <div class="bg-white  rounded-lg shadow-inherit">
+                    <h2 class="font-semibold border-b-2 border-dashed border-[#3751fd13] px-4 pb-2 pt-3">Question-2:
+                        What is the difference between innerHTML, innerText, and textContent ?</h2>
+                    <p class="px-4 py-3 text-[#000000aa]">innerHTML reads both the HTML markup and the text content of
+                        the element. innerText reads only the visible text, ignoring hidden elements and removing extra
+                        spaces. textContent reads all text in the markup, including hidden elements.</p>
+                </div>
+
+                <div class="bg-white  rounded-lg shadow-inherit">
+                    <h2 class="font-semibold border-b-2 border-dashed border-[#3751fd13] px-4 pb-2 pt-3">Question-3:
+                        What is event delegation in the DOM?</h2>
+                    <p class="px-4 py-3 text-[#000000aa]">Event delegation allows us to attach a single event listener
+                        to a parent element, allowing it to handle events for all matching child elements, including
+                        those that are dynamically added in the future.</p>
+                </div>
+
+                <div class="bg-white  rounded-lg shadow-inherit">
+                    <h2 class="font-semibold border-b-2 border-dashed border-[#3751fd13] px-4 pb-2 pt-3">Question-4:
+                        What is event bubbling in the DOM?</h2>
+                    <p class="px-4 py-3 text-[#000000aa]">Event Bubbling is a term in the DOM where the event and
+                        element receive is bubbled to its parent and ancestors, upward in the DOM tree, until it gets to
+                        the root.</p>
+                </div>
+
+                <div class="bg-white  rounded-lg shadow-inherit">
+                    <h2 class="font-semibold border-b-2 border-dashed border-[#3751fd13] px-4 pb-2 pt-3">Question-5: How
+                        do you create, add, and remove elements using JavaScript?</h2>
+                    <p class="px-4 py-3 text-[#000000aa]">In JavaScript, we can create, add, and remove elements using
+                        the splice method.</p>
+                </div>
+
+            </section>
+        </main>
+
+
+
+
+
+    </section>
+
+    <script src="script.js/qna.js"></script>
+
+
 </body>
+
 </html>

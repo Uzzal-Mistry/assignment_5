@@ -28,14 +28,14 @@
 
 
 
-    <title>Document</title>
+    <title>Dev Board</title>
 </head>
 
 <body class="bg-[#F4F7FF]">
-    <section class="poppins p-28 ">
+    <section class="poppins px-28 pt-5 pb-10">
 
         <!-- navbar -->
-        <header class="flex justify-between bg-[#FFFFFF] rounded-lg px-4 py-2">
+        <header class="flex justify-between bg-[#FFFFFF] rounded-lg px-4 py-2 shadow">
 
             <!-- header left  -->
             <div class="flex justify-center items-center ">
@@ -58,13 +58,13 @@
 
 
 
-        <main class="mt-5 flex gap-5">
+        <main class="mt-3 flex gap-5">
 
             <!-- dashboard -->
-            <section class="bg-white w-9/12 rounded-lg ">
+            <section class="bg-white w-9/12 rounded-lg shadow">
 
                 <!-- discover section -->
-                <div class=" flex border-b-2 border-dashed border-[#3751fd13] p-5 gap-4">
+                <div class=" flex border-b-2 border-dashed border-[#3751fd13] p-5 gap-4 ">
 
                     <!-- task assignment -->
                     <div class="w-3/12 bg-[#F4F7FF] flex justify-center items-center py-3 px-5 rounded-lg      ">
@@ -78,8 +78,8 @@
                     </div>
 
                     <!-- discover something -->
-                    <div
-                        class="w-6/12 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center py-3 px-5 rounded-lg  ">
+                    <div id="discover"
+                        class="cursor-pointer w-6/12 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-start items-center py-3 px-5 rounded-lg  ">
                         <div class=" mr-3">
                             <img src="assets/board.png" alt="">
                         </div>
@@ -107,7 +107,7 @@
 
 
                 <!-- course container -->
-                <div class="pb-8 p-5  grid grid-cols-3 gap-5">
+                <div class="pb-8 p-5  grid grid-cols-3 gap-5 ">
 
                     
                     <!--  -->
@@ -162,7 +162,7 @@
 
                                 <div>
                                     <p class="font-normal text-xm">Deadline</p>
-                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                    <h1 class="font-semibold text-sm">25 March 2025</h1>
                                 </div>
                                 <div class="">
                                     <button id="complete_btn2" onclick="disable(this)"
@@ -195,7 +195,7 @@
 
                                 <div>
                                     <p class="font-normal text-xm">Deadline</p>
-                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                    <h1 class="font-semibold text-sm">31 March 2025</h1>
                                 </div>
                                 <div class="">
                                     <button id="complete_btn3" onclick="disable(this)"
@@ -229,7 +229,7 @@
 
                                 <div>
                                     <p class="font-normal text-xm">Deadline</p>
-                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                    <h1 class="font-semibold text-sm">10 April 2025</h1>
                                 </div>
                                 <div class="">
                                     <button id="complete_btn4" onclick="disable(this)"
@@ -262,7 +262,7 @@
 
                                 <div>
                                     <p class="font-normal text-xm">Deadline</p>
-                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                    <h1 class="font-semibold text-sm">26 April 2025</h1>
                                 </div>
                                 <div class="">
                                     <button id="complete_btn5" onclick="disable(this)"
@@ -295,7 +295,7 @@
 
                                 <div>
                                     <p class="font-normal text-xm">Deadline</p>
-                                    <h1 class="font-semibold text-sm">21 March 2025</h1>
+                                    <h1 class="font-semibold text-sm">1 May 2025</h1>
                                 </div>
                                 <div class="">
                                     <button id="complete_btn6" onclick="disable(this)"
@@ -319,7 +319,7 @@
 
 
             <!-- activity log -->
-            <section class="bg-white w-3/12 rounded-lg">
+            <section class="bg-white w-3/12 rounded-lg shadow">
                 <div class="flex flex-col justify-center items-center mt-6 border-b-2 border-dashed border-[#3751fd13]">
                     <div class="flex text-[#00303C] justify-center items-center gap-2">
                         <img class="w-5 h-5" src="assets/activity.png" alt="">
@@ -346,4 +346,7 @@
 
     <script src="script.js/taskComplete.js"></script>
     <script src="utility/utility.js"></script>
+    <script src="script.js/qna.js"></script>
+
 </body>
+</html>
